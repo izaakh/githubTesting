@@ -306,7 +306,12 @@ const numbers = [1, 2, 3, 4];
 const courses = [
     {id: 1, name: 'a'},
     {id: 2, name: 'b'},
-]
+];
+
+const combined = numbers.concat(courses);
+console.log(combined);
+const slice = combined.slice(3);
+console.log(slice);
 // //adding elelmeents to array
 // numbers.push(9);
 // numbers.pop(1);
@@ -329,8 +334,7 @@ const courses = [
 // console.log(numbers);
 // console.log(middle);
 
-numbers.splice(0,numbers.length);
-console.log(numbers);
+
 
 // Finding primitives in array
 // console.log(numbers.indexOf(1));
@@ -349,5 +353,5 @@ console.log(numbers);
 // console.log(course);
 
 // Arrow functions same as find function above
-let course = courses.find(course => course.name === 'a');
+// let course = courses.find(course => course.name === 'a');
 // console.log(course);
